@@ -31,12 +31,12 @@
 // <e> USB0 Controller [Driver_USBD0 and Driver_USBH0]
 // <i> Configuration settings for Driver_USBD0 in component ::Drivers:USB Device
 // <i> Configuration settings for Driver_USBH0 in component ::Drivers:USB Host
-#define   RTE_USB_USB0                  0
+#define   RTE_USB_USB0                  1
 
 //   <h> Pin Configuration
 //     <o> USB0_PPWR (Host) <0=>Not used <1=>P1_7 <2=>P2_0 <3=>P2_3 <4=>P6_3
 //     <i> VBUS drive signal (towards external charge pump or power management unit).
-#define   RTE_USB0_PPWR_ID              1
+#define   RTE_USB0_PPWR_ID              4
 #if      (RTE_USB0_PPWR_ID == 0)
   #define RTE_USB0_PPWR_PIN_EN          0
 #elif    (RTE_USB0_PPWR_ID == 1)
@@ -65,7 +65,7 @@
 //     <i> Port power fault signal indicating overcurrent condition.
 //     <i> This signal monitors over-current on the USB bus
 //        (external circuitry required to detect over-current condition).
-#define   RTE_USB0_PWR_FAULT_ID         1
+#define   RTE_USB0_PWR_FAULT_ID         4
 #if      (RTE_USB0_PWR_FAULT_ID == 0)
   #define RTE_USB0_PWR_FAULT_PIN_EN     0
 #elif    (RTE_USB0_PWR_FAULT_ID == 1)
@@ -96,7 +96,7 @@
 #endif
 //     <o> USB0_IND0 <0=>Not used <1=>P1_4 <2=>P2_5 <3=>P2_6 <4=>P6_8 <5=>P8_2
 //     <i> USB0 port indicator LED control output 0
-#define   RTE_USB0_IND0_ID              1
+#define   RTE_USB0_IND0_ID              5
 #if      (RTE_USB0_IND0_ID == 0)
   #define RTE_USB0_IND0_PIN_EN          0
 #elif    (RTE_USB0_IND0_ID == 1)
@@ -127,7 +127,7 @@
 #endif
 //     <o> USB0_IND1 <0=>Not used <1=>P1_3 <2=>P2_2 <3=>P6_7 <4=>P8_1
 //     <i> USB0 port indicator LED control output 1
-#define   RTE_USB0_IND1_ID              1
+#define   RTE_USB0_IND1_ID              4
 #if      (RTE_USB0_IND1_ID == 0)
   #define RTE_USB0_IND1_PIN_EN          0
 #elif    (RTE_USB0_IND1_ID == 1)
@@ -158,7 +158,7 @@
 //   <i> Configuration settings for Driver_USBD0 in component ::Drivers:USB Device
 //     <o.0> High-speed
 //     <i> Enable high-speed functionality
-#define   RTE_USB_USB0_HS_EN            0
+#define   RTE_USB_USB0_HS_EN            1
 //   </h> Device [Driver_USBD0]
 // </e> USB0 Controller [Driver_USBD0 and Driver_USBH0]
 
@@ -202,7 +202,7 @@
 #endif
 //     <o> USB1_IND0 <0=>Not used <1=>P3_2 <2=>P9_4
 //     <i> USB1 port indicator LED control output 0
-#define   RTE_USB1_IND0_ID              1
+#define   RTE_USB1_IND0_ID              2
 #if      (RTE_USB1_IND0_ID == 0)
   #define RTE_USB1_IND0_PIN_EN          0
 #elif    (RTE_USB1_IND0_ID == 1)
@@ -221,7 +221,7 @@
 #endif
 //     <o> USB1_IND1 <0=>Not used <1=>P3_1 <2=>P9_3
 //     <i> USB1 port indicator LED control output 1
-#define   RTE_USB1_IND1_ID              1
+#define   RTE_USB1_IND1_ID              2
 #if      (RTE_USB1_IND1_ID == 0)
   #define RTE_USB1_IND1_PIN_EN          0
 #elif    (RTE_USB1_IND1_ID == 1)
@@ -975,7 +975,7 @@
 // <e> I2C0 (Inter-integrated Circuit Interface 0) [Driver_I2C0]
 // <i> Configuration settings for Driver_I2C0 in component ::Drivers:I2C
 // </e> I2C0 (Inter-integrated Circuit Interface 0) [Driver_I2C0]
-#define   RTE_I2C0                      0
+#define   RTE_I2C0                      1
 
 // <e> I2C1 (Inter-integrated Circuit Interface 1) [Driver_I2C1]
 // <i> Configuration settings for Driver_I2C1 in component ::Drivers:I2C
@@ -1010,12 +1010,12 @@
 // </e> I2C1 (Inter-integrated Circuit Interface 1) [Driver_I2C1]
 
 // <e> USART0 (Universal synchronous asynchronous receiver transmitter) [Driver_USART0]
-#define   RTE_USART0                    0
+#define   RTE_USART0                    1
 
 //   <h> Pin Configuration
 //     <o> TX <0=>Not used <1=>P2_0 <2=>P6_4 <3=>P9_5 <4=>PF_10
 //     <i> USART0 Serial Output pin
-#define   RTE_USART0_TX_ID              0
+#define   RTE_USART0_TX_ID              1
 #if      (RTE_USART0_TX_ID == 0)
   #define RTE_USART0_TX_PIN_EN          0
 #elif    (RTE_USART0_TX_ID == 1)
@@ -1042,7 +1042,7 @@
 #endif
 //     <o> RX <0=>Not used <1=>P2_1 <2=>P6_5 <3=>P9_6 <4=>PF_11
 //     <i> USART0 Serial Input pin
-#define   RTE_USART0_RX_ID              0
+#define   RTE_USART0_RX_ID              1
 #if      (RTE_USART0_RX_ID == 0)
   #define RTE_USART0_RX_PIN_EN          0
 #elif    (RTE_USART0_RX_ID == 1)
@@ -1488,7 +1488,7 @@
 //   <h> Pin Configuration
 //     <o> TX <0=>Not used <1=>P2_3 <2=>P4_1 <3=>P9_3 <4=>PF_2
 //     <i> USART3 Serial Output pin
-#define   RTE_USART3_TX_ID              0
+#define   RTE_USART3_TX_ID              1
 #if      (RTE_USART3_TX_ID == 0)
   #define RTE_USART3_TX_PIN_EN          0
 #elif    (RTE_USART3_TX_ID == 1)
@@ -1515,7 +1515,7 @@
 #endif
 //     <o> RX <0=>Not used <1=>P2_4 <2=>P4_2 <3=>P9_4 <4=>PF_3
 //     <i> USART3 Serial Input pin
-#define   RTE_USART3_RX_ID              0
+#define   RTE_USART3_RX_ID              1
 #if      (RTE_USART3_RX_ID == 0)
   #define RTE_USART3_RX_PIN_EN          0
 #elif    (RTE_USART3_RX_ID == 1)
@@ -1599,12 +1599,12 @@
 
 // <e> SSP0 (Synchronous Serial Port 0) [Driver_SPI0]
 // <i> Configuration settings for Driver_SPI0 in component ::Drivers:SPI
-#define   RTE_SSP0                      0
+#define   RTE_SSP0                      1
 
 //   <h> Pin Configuration
 //     <o> SSP0_SSEL <0=>Not used <1=>P1_0 <2=>P3_6 <3=>P3_8 <4=>P9_0 <5=>PF_1
 //     <i> Slave Select for SSP0
-#define   RTE_SSP0_SSEL_PIN_SEL         1
+#define   RTE_SSP0_SSEL_PIN_SEL         5
 #if      (RTE_SSP0_SSEL_PIN_SEL == 0)
 #define   RTE_SSP0_SSEL_PIN_EN          0
 #elif    (RTE_SSP0_SSEL_PIN_SEL == 1)
@@ -1650,7 +1650,7 @@
 #endif
 //     <o> SSP0_SCK <0=>P3_0 <1=>P3_3 <2=>PF_0
 //     <i> Serial clock for SSP0
-#define   RTE_SSP0_SCK_PIN_SEL          0
+#define   RTE_SSP0_SCK_PIN_SEL          2
 #if      (RTE_SSP0_SCK_PIN_SEL == 0)
   #define RTE_SSP0_SCK_PORT             3
   #define RTE_SSP0_SCK_BIT              0
@@ -1668,7 +1668,7 @@
 #endif
 //     <o> SSP0_MISO <0=>Not used <1=>P1_1 <2=>P3_6 <3=>P3_7 <4=>P9_1 <5=>PF_2
 //     <i> Master In Slave Out for SSP0
-#define   RTE_SSP0_MISO_PIN_SEL         0
+#define   RTE_SSP0_MISO_PIN_SEL         5
 #if      (RTE_SSP0_MISO_PIN_SEL == 0)
   #define RTE_SSP0_MISO_PIN_EN          0
 #elif    (RTE_SSP0_MISO_PIN_SEL == 1)
@@ -1699,7 +1699,7 @@
 #endif
 //     <o> SSP0_MOSI <0=>Not used <1=>P1_2 <2=>P3_7 <3=>P3_8 <4=>P9_2 <5=>PF_3
 //     <i> Master Out Slave In for SSP0
-#define   RTE_SSP0_MOSI_PIN_SEL         0
+#define   RTE_SSP0_MOSI_PIN_SEL         5
 #if      (RTE_SSP0_MOSI_PIN_SEL == 0)
   #define RTE_SSP0_MOSI_PIN_EN          0
 #elif    (RTE_SSP0_MOSI_PIN_SEL == 1)
@@ -1971,7 +1971,7 @@
 
 // <e> I2S0 (Integrated Interchip Sound 0) [Driver_SAI0]
 // <i> Configuration settings for Driver_SAI0 in component ::Drivers:SAI
-#define   RTE_I2S0                      0
+#define   RTE_I2S0                      1
 
 //   <h> Pin Configuration
 //     <o> I2S0_RX_SCK <0=>Not used <1=>P3_0 <2=>P6_0 <3=>PF_4
@@ -2145,7 +2145,7 @@
 #endif
 //     <o> I2S0_TX_MCLK <0=>Not used <1=>P3_0 <2=>P3_3 <3=>PF_4 <4=>CLK2
 //     <i> Transmit master clock for I2S0
-#define   RTE_I2S0_TX_MCLK_PIN_SEL      2
+#define   RTE_I2S0_TX_MCLK_PIN_SEL      0
 #if      (RTE_I2S0_TX_MCLK_PIN_SEL == 0)
 #define   RTE_I2S0_TX_MCLK_PIN_EN       0
 #elif    (RTE_I2S0_TX_MCLK_PIN_SEL == 1)
@@ -2177,7 +2177,7 @@
 //       <o1> Channel     <0=>0 <1=>1 <2=>2 <3=>3 <4=>4 <5=>5 <6=>6 <7=>7
 //       <o2> Peripheral  <0=>9 (DMAMUXPER9)
 //     </e>
-#define   RTE_I2S0_DMA_TX_EN            0
+#define   RTE_I2S0_DMA_TX_EN            1
 #define   RTE_I2S0_DMA_TX_CH            0
 #define   RTE_I2S0_DMA_TX_PERI_ID       0
 #if      (RTE_I2S0_DMA_TX_PERI_ID == 0)
@@ -2188,7 +2188,7 @@
 //       <o1> Channel     <0=>0 <1=>1 <2=>2 <3=>3 <4=>4 <5=>5 <6=>6 <7=>7
 //       <o2> Peripheral  <0=>10 (DMAMUXPER10)
 //     </e>
-#define   RTE_I2S0_DMA_RX_EN            0
+#define   RTE_I2S0_DMA_RX_EN            1
 #define   RTE_I2S0_DMA_RX_CH            1
 #define   RTE_I2S0_DMA_RX_PERI_ID       0
 #if      (RTE_I2S0_DMA_RX_PERI_ID == 0)
@@ -2205,7 +2205,7 @@
 //   <h> Pin Configuration
 //     <o> I2S1_RX_SCK <0=>Not used <1=>CLK2 <2=>CLK3
 //     <i> Receive clock for I2S1
-#define   RTE_I2S1_RX_SCK_PIN_SEL       0
+#define   RTE_I2S1_RX_SCK_PIN_SEL       1
 #if      (RTE_I2S1_RX_SCK_PIN_SEL == 0)
 #define   RTE_I2S1_RX_SCK_PIN_EN        0
 #elif    (RTE_I2S1_RX_SCK_PIN_SEL == 1)
@@ -2224,7 +2224,7 @@
 #endif
 //     <o> I2S1_RX_WS <0=>Not used <1=>P3_5
 //     <i> Receive word select for I2S1
-#define   RTE_I2S1_RX_WS_PIN_SEL        0
+#define   RTE_I2S1_RX_WS_PIN_SEL        1
 #if      (RTE_I2S1_RX_WS_PIN_SEL == 0)
 #define   RTE_I2S1_RX_WS_PIN_EN         0
 #elif    (RTE_I2S1_RX_WS_PIN_SEL == 1)
@@ -2239,7 +2239,7 @@
 #endif
 //     <o> I2S1_RX_SDA <0=>Not used <1=>P3_4
 //     <i> Receive master clock for I2S1
-#define   RTE_I2S1_RX_SDA_PIN_SEL       0
+#define   RTE_I2S1_RX_SDA_PIN_SEL       1
 #if      (RTE_I2S1_RX_SDA_PIN_SEL == 0)
 #define   RTE_I2S1_RX_SDA_PIN_EN        0
 #elif    (RTE_I2S1_RX_SDA_PIN_SEL == 1)
@@ -2254,7 +2254,7 @@
 #endif
 //     <o> I2S1_RX_MCLK <0=>Not used <1=>PA_0
 //     <i> Receive master clock for I2S1
-#define   RTE_I2S1_RX_MCLK_PIN_SEL      0
+#define   RTE_I2S1_RX_MCLK_PIN_SEL      1
 #if      (RTE_I2S1_RX_MCLK_PIN_SEL == 0)
 #define   RTE_I2S1_RX_MCLK_PIN_EN       0
 #elif    (RTE_I2S1_RX_MCLK_PIN_SEL == 1)
@@ -2269,7 +2269,7 @@
 #endif
 //     <o> I2S1_TX_SCK <0=>Not used <1=>P1_19 <2=>P3_3 <3=>P4_7
 //     <i> Transmit clock for I2S1
-#define   RTE_I2S1_TX_SCK_PIN_SEL       0
+#define   RTE_I2S1_TX_SCK_PIN_SEL       1
 #if      (RTE_I2S1_TX_SCK_PIN_SEL == 0)
 #define   RTE_I2S1_TX_SCK_PIN_EN        0
 #elif    (RTE_I2S1_TX_SCK_PIN_SEL == 1)
@@ -2292,7 +2292,7 @@
 #endif
 //     <o> I2S1_TX_WS <0=>Not used <1=>P0_0 <2=>PF_7
 //     <i> Transmit word select for I2S1
-#define   RTE_I2S1_TX_WS_PIN_SEL        0
+#define   RTE_I2S1_TX_WS_PIN_SEL        1
 #if      (RTE_I2S1_TX_WS_PIN_SEL == 0)
 #define   RTE_I2S1_TX_WS_PIN_EN         0
 #elif    (RTE_I2S1_TX_WS_PIN_SEL == 1)
@@ -2311,7 +2311,7 @@
 #endif
 //     <o> I2S1_TX_SDA <0=>Not used <1=>P0_1 <2=>PF_6
 //     <i> Transmit data for I2S
-#define   RTE_I2S1_TX_SDA_PIN_SEL       0
+#define   RTE_I2S1_TX_SDA_PIN_SEL       1
 #if      (RTE_I2S1_TX_SDA_PIN_SEL == 0)
 #define   RTE_I2S1_TX_SDA_PIN_EN        0
 #elif    (RTE_I2S1_TX_SDA_PIN_SEL == 1)
@@ -2330,7 +2330,7 @@
 #endif
 //     <o> I2S1_TX_MCLK <0=>Not used <1=>P8_8 <2=>PF_0 <3=>CLK1
 //     <i> Transmit master clock for I2S1
-#define   RTE_I2S1_TX_MCLK_PIN_SEL      0
+#define   RTE_I2S1_TX_MCLK_PIN_SEL      1
 #if      (RTE_I2S1_TX_MCLK_PIN_SEL == 0)
 #define   RTE_I2S1_TX_MCLK_PIN_EN       0
 #elif    (RTE_I2S1_TX_MCLK_PIN_SEL == 1)
@@ -2358,7 +2358,7 @@
 //       <o1> Channel     <0=>0 <1=>1 <2=>2 <3=>3 <4=>4 <5=>5 <6=>6 <7=>7
 //       <o2> Peripheral  <0=>3 (DMAMUXPER3)
 //     </e>
-#define   RTE_I2S1_DMA_TX_EN            0
+#define   RTE_I2S1_DMA_TX_EN            1
 #define   RTE_I2S1_DMA_TX_CH            0
 #define   RTE_I2S1_DMA_TX_PERI_ID       0
 #if      (RTE_I2S1_DMA_TX_PERI_ID == 0)
@@ -2369,7 +2369,7 @@
 //       <o1> Channel     <0=>0 <1=>1 <2=>2 <3=>3 <4=>4 <5=>5 <6=>6 <7=>7
 //       <o2> Peripheral  <0=>4 (DMAMUXPER4)
 //     </e>
-#define   RTE_I2S1_DMA_RX_EN            0
+#define   RTE_I2S1_DMA_RX_EN            1
 #define   RTE_I2S1_DMA_RX_CH            1
 #define   RTE_I2S1_DMA_RX_PERI_ID       0
 #if      (RTE_I2S1_DMA_RX_PERI_ID == 0)
@@ -2381,12 +2381,12 @@
 
 // <e> CAN0 Controller [Driver_CAN0]
 // <i> Configuration settings for Driver_CAN0 in component ::Drivers:CAN
-#define   RTE_CAN_CAN0                  0
+#define   RTE_CAN_CAN0                  1
 
 //   <h> Pin Configuration
 //     <o> CAN0_RD <0=>Not used <1=>P3_1 <2=>PE_2
 //     <i> CAN0 receiver input.
-#define   RTE_CAN0_RD_ID                0
+#define   RTE_CAN0_RD_ID                1
 #if      (RTE_CAN0_RD_ID == 0)
   #define RTE_CAN0_RD_PIN_EN            0
 #elif    (RTE_CAN0_RD_ID == 1)
@@ -2405,7 +2405,7 @@
 #endif
 //     <o> CAN0_TD <0=>Not used <1=>P3_2 <2=>PE_3
 //     <i> CAN0 transmitter output.
-#define   RTE_CAN0_TD_ID                0
+#define   RTE_CAN0_TD_ID                1
 #if      (RTE_CAN0_TD_ID == 0)
   #define RTE_CAN0_TD_PIN_EN            0
 #elif    (RTE_CAN0_TD_ID == 1)
@@ -2432,7 +2432,7 @@
 //   <h> Pin Configuration
 //     <o> CAN1_RD <0=>Not used <1=>P1_18 <2=>P4_9 <3=>PE_1
 //     <i> CAN1 receiver input.
-#define   RTE_CAN1_RD_ID                0
+#define   RTE_CAN1_RD_ID                1
 #if      (RTE_CAN1_RD_ID == 0)
   #define RTE_CAN1_RD_PIN_EN            0
 #elif    (RTE_CAN1_RD_ID == 1)
@@ -2455,7 +2455,7 @@
 #endif
 //     <o> CAN1_TD <0=>Not used <1=>P1_17 <2=>P4_8 <3=>PE_0
 //     <i> CAN1 transmitter output.
-#define   RTE_CAN1_TD_ID                0
+#define   RTE_CAN1_TD_ID                1
 #if      (RTE_CAN1_TD_ID == 0)
   #define RTE_CAN1_TD_PIN_EN            0
 #elif    (RTE_CAN1_TD_ID == 1)
