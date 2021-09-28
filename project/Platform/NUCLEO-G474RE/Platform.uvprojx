@@ -559,7 +559,7 @@
         </targetInfos>
       </component>
       <component Cbundle="NUCLEO-G474RE" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-G474RE BSP">
-        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="0.1.0-dev0"/>
+        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-G474RE"/>
         </targetInfos>
@@ -571,7 +571,7 @@
         </targetInfos>
       </component>
       <component Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant="NUCLEO-G474RE" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-G474RE VIO">
-        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="0.1.0-dev0"/>
+        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-G474RE"/>
         </targetInfos>
@@ -581,7 +581,7 @@
       <file attr="config" category="header" name="Drivers\Config\stm32g4xx_nucleo_conf.h" version="1.0.0">
         <instance index="0">RTE\Board_Support\STM32G474RETx\stm32g4xx_nucleo_conf.h</instance>
         <component Cbundle="NUCLEO-G474RE" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.0.0" condition="NUCLEO-G474RE BSP"/>
-        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="0.1.0-dev0"/>
+        <package name="NUCLEO-G474RE_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/NUCLEO-G474RE_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="NUCLEO-G474RE"/>
         </targetInfos>
