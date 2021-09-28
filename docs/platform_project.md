@@ -9,13 +9,13 @@ based software template that can be further expanded.
 
 The following software is required:
 
-- MDK v5.35 or above for creating the project and extracting the CPRJ file with layer information (the free MDK-Lite
+- MDK v5.35 or later for creating the project and extracting the CPRJ file with layer information (the free MDK-Lite
   edition is sufficient)
 - The following packs need to be installed:
-  - ARM.CMSIS 5.7.0 or above
-  - ARM.CMSIS-Driver 2.6.1 or above
-  - Keil.ARM_Compiler 1.6.3 or above
-  - Software pack(s) that contain(s) device support (DFP/BSP)
+  - ARM.CMSIS 5.7.0 or later
+  - ARM.CMSIS-Driver 2.6.1 or later
+  - Keil.ARM_Compiler 1.6.3 or later
+  - Latest available software pack(s) that contains device support (DFP/BSP)
 
 ## Create the Project
 
@@ -60,7 +60,7 @@ These templates are available in the [templates](./templates) directory.
 
 Go to **Project - Manage - Project Items...** and configure the project as follows:
 
-- Under **Project Targets**, rename the target (usually **Target 1** to the actual **board name**.
+- Under **Project Targets**, rename the target (usually **Target 1** to the actual **board name**).
 - Under **Groups** add:
   - **App**: Platform.c (module where main thread application is running)
   - **Board IO**:
@@ -117,7 +117,7 @@ Go to **Project - Manage - Project Items...** and configure the project as follo
         /**
         * Override default HAL_InitTick function
         */
-        HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority) {
+        HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority) {
           
           UNUSED(TickPriority);
         
@@ -128,7 +128,7 @@ Go to **Project - Manage - Project Items...** and configure the project as follo
         ```
         SystemCoreClockUpdate();
         ```
-      - add other initialization code at `USER CODE BEGIN 2 SysInit`:
+      - add other initialization code at `USER CODE BEGIN 2`:
         ```
         #ifdef RTE_VIO_BOARD
           vioInit();
@@ -159,7 +159,6 @@ Go to **Project - Options for Target (Alt+F7)** and change:
   - set the **Name of Executable** to "image":  
     ![Options for Target - Output tab](./images/targ_opt_output.png)
 - On the **C/C++(AC6)** tab:
-  - Set **Optimization:** to *-O1*
   - Set **Warnings:** to *AC5-like Warnings*
   - Add **Include Paths:** `.\Board_IO` (if `arduino.c` is available):  
     ![Options for Target - C/C++ tab](./images/targ_opt_c_cpp.png)
@@ -181,7 +180,7 @@ Configure following items:
   - **Heap Size** to *64 KB*
   - **Stack Size** to *1 KB*
 - In the `RTX_Config.h` file, set:
-  - **Global Dynamic Memory size** to *24000* bytes
+  - **Global Dynamic Memory size** to *32768* bytes
   - **Default Thread Stack size** to *3072* bytes
   - Under **Event Recorder Configuration**, set:
     - **Global Initialization** to *1*
