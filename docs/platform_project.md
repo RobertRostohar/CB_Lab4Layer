@@ -9,13 +9,13 @@ based software template that can be further expanded.
 
 The following software is required:
 
-- MDK v5.35 or later for creating the project and extracting the CPRJ file with layer information (the free MDK-Lite
+- MDK v5.35 or above for creating the project and extracting the CPRJ file with layer information (the free MDK-Lite
   edition is sufficient)
 - The following packs need to be installed:
-  - ARM.CMSIS 5.7.0 or later
-  - ARM.CMSIS-Driver 2.6.1 or later
-  - Keil.ARM_Compiler 1.6.3 or later
-  - Latest available software pack(s) that contains device support (DFP/BSP)
+  - ARM.CMSIS 5.7.0 or above
+  - ARM.CMSIS-Driver 2.6.1 or above
+  - Keil.ARM_Compiler 1.6.3 or above
+  - Latest available software pack(s) that contain(s) device support (DFP/BSP)
 
 ## Create the Project
 
@@ -159,7 +159,9 @@ Go to **Project - Options for Target (Alt+F7)** and change:
   - set the **Name of Executable** to "image":  
     ![Options for Target - Output tab](./images/targ_opt_output.png)
 - On the **C/C++(AC6)** tab:
+  - Set **Optimization:** to *-O1*
   - Set **Warnings:** to *AC5-like Warnings*
+  - Select **One EFL Section per Function** checkbox
   - Add **Include Paths:** `.\Board_IO` (if `arduino.c` is available):  
     ![Options for Target - C/C++ tab](./images/targ_opt_c_cpp.png)
 - On the **Linker** tab:
