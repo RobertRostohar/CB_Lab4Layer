@@ -19,8 +19,8 @@ It is configured with the following settings:
 
 Refer to [Configure RTX v5](https://arm-software.github.io/CMSIS_5/RTOS2/html/config_rtx5.html) for a detailed description of all configuration options.
 
-Board: STMicroelectronics STM32G071B-DISCO
-------------------------------------------
+Board: STMicroelectronics STM32G071B-DISCO_BSP
+----------------------------------------------
 
 The tables below list the device configuration for this board. This setup is configured using **STM32CubeMX**,
 an interactive tool provided by ST for device configuration. Refer to ["Create Projects with STM32Cube HAL and STM32CubeMX"](https://www.keil.com/pack/doc/STM32Cube) for additional information.
