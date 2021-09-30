@@ -141,7 +141,6 @@ rm -r "${temp_path}"
 cbuildgen "${project_path}/Watson_MQTT_Demo/MCB4300_MW-Network_ETH_RTX/watson_mqtt_demo.MCB4300.cprj" extract --outdir="${temp_path}"
 cp -r "${temp_path}/App/."    "${layer_path}/App/Watson_MQTT_Demo"
 cp -r "${temp_path}/Socket/." "${layer_path}/Socket/MW-Network_ETH"
-cp -r "${temp_path}/Board/."  "${layer_path}/Board/MCB4300"
 rm -r "${temp_path}"
 
 cbuildgen "${project_path}/MDK-Middleware/USB/Device/HID/MCB4300/HID.MCB4300.cprj" extract --outdir="${temp_path}"
@@ -174,6 +173,10 @@ rm -r "${temp_path}"
 
 cbuildgen "${project_path}/Platform/LPCXpresso55S69/Platform.LPCXpresso55S69.cprj" extract --outdir="${temp_path}"
 cp -r "${temp_path}/Board/." "${layer_path}/Board/LPCXpresso55S69"
+rm -r "${temp_path}"
+
+cbuildgen "${project_path}/Platform/MCB4300/Platform.MCB4300.cprj" extract --outdir="${temp_path}"
+cp -r "${temp_path}/Board/." "${layer_path}/Board/MCB4300"
 rm -r "${temp_path}"
 
 cbuildgen "${project_path}/Platform/MIMXRT1064-EVK/Platform.MIMXRT1064-EVK.cprj" extract --outdir="${temp_path}"
