@@ -19,7 +19,7 @@
   </info>
 
   <layers>
-    <layer name="App">
+    <layer name="App" title="MDK-Middleware USB Device Mass Storage">
       <description>MDK-Middleware USB Device Mass Storage example</description>
       <doc>https://www.keil.com/pack/doc/MW/USB/html/dev_msc_tutorial.html</doc>
       <category>MDK-Middleware, USB Device, Mass Storage, MSC, Example</category>

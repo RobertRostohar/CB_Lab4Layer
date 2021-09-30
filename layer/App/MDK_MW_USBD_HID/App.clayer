@@ -18,7 +18,7 @@
   </info>
 
   <layers>
-    <layer name="App">
+    <layer name="App" title="MDK-Middleware USB Device HID">
       <description>MDK-Middleware USB Device HID example</description>
       <doc>https://www.keil.com/pack/doc/MW/USB/html/dev_hid_tutorial.html</doc>
       <category>MDK-Middleware, USB Device, HID, Example</category>
