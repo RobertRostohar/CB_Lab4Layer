@@ -403,11 +403,6 @@
               <FileType>5</FileType>
               <FilePath>.\main.h</FilePath>
             </File>
-            <File>
-              <FileName>lpc4357.sct</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\lpc4357.sct</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -854,11 +849,6 @@
       <LayAsnItem>
         <LayAsnType>2</LayAsnType>
         <LayAsnName>.\main.h</LayAsnName>
-        <LayAsnLayerName>Board</LayAsnLayerName>
-      </LayAsnItem>
-      <LayAsnItem>
-        <LayAsnType>2</LayAsnType>
-        <LayAsnName>.\lpc4357.sct</LayAsnName>
         <LayAsnLayerName>Board</LayAsnLayerName>
       </LayAsnItem>
       <LayAsnItem>
