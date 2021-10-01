@@ -115,7 +115,6 @@
     <group name="Board">
       <file category="sourceC" layer="Board" name="./main.c"/>
       <file category="header" layer="Board" name="./main.h"/>
-      <file category="linkerScript" layer="Board" name="./lpc4357.sct"/>
     </group>
     <group name="Board IO">
       <file category="sourceC" layer="Board" name="./Board_IO/vio_MCB4300.c"/>
