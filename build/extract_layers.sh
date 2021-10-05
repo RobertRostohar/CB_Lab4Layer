@@ -75,6 +75,7 @@ pushd "Board"
 mkdir "32L4R9IDISCOVERY"
 mkdir "32F746GDISCOVERY"
 mkdir "B-L475E-IOT01A"
+mkdir "B-U585I-IOT02A"
 mkdir "FRDM-K32L3A6"
 mkdir "IMXRT1050-EVKB"
 mkdir "MCB4300"
@@ -152,6 +153,10 @@ rm -r "${temp_path}"
 
 cbuildgen "${project_path}/Platform/B-L475E-IOT01A/Platform.B-L475E-IOT01A.cprj" extract --outdir="${temp_path}"
 cp -r "${temp_path}/Board/." "${layer_path}/Board/B-L475E-IOT01A"
+rm -r "${temp_path}"
+
+cbuildgen "${project_path}/Platform/B-U585I-IOT02A/Platform.B-U585I-IOT02A.cprj" extract --outdir="${temp_path}"
+cp -r "${temp_path}/Board/." "${layer_path}/Board/B-U585I-IOT02A"
 rm -r "${temp_path}"
 
 cbuildgen "${project_path}/Platform/FRDM-K32L3A6/Platform.FRDM-K32L3A6.cprj" extract --outdir="${temp_path}"
