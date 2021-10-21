@@ -112,4 +112,3 @@ All following settings are changes to default configuration:
 | vioBUTTON0        | Button USER (PC13)
 | vioLED0           | LD3 RED (PG11)
 | vioLED1           | LD2 BLUE (PG2)
-| virtual terminal  | GLCD 4.3 inch (480 x 272 pixel)
