@@ -9,16 +9,18 @@ usage() {
   echo "  gen_proj.sh App=<AppLayer>"
   echo "              Board=<BoardLayer>"
   echo "              [Module=<ModuleLayer>]"
+  echo "              [Interface=<InterfaceLayer>]"
   echo "              [Socket=<SocketLayer>]"
   echo "              [RTOS=<RTOSLayer>]"
   echo "              [--layer=<LayerPath>]"
   echo ""
-  echo "  App=<AppLayer>           : Application layer"
-  echo "  Board=<BoardLayer>       : Board layer"
-  echo "  Module=<ModuleLayer>     : Module layer (optional)"
-  echo "  Socket=<SocketLayer>     : Socket layer (optional)"
-  echo "  RTOS=<SocketLayer>       : RTOS layer (optional)"
-  echo "  --layer=<LayerPath>      : Layer directory (default=Layer)"
+  echo "  App=<AppLayer>             : Application layer"
+  echo "  Board=<BoardLayer>         : Board layer"
+  echo "  Module=<ModuleLayer>       : Module layer (optional)"
+  echo "  Interface=<InterfaceLayer> : Interface layer (optional)"
+  echo "  Socket=<SocketLayer>       : Socket layer (optional)"
+  echo "  RTOS=<SocketLayer>         : RTOS layer (optional)"
+  echo "  --layer=<LayerPath>        : Layer directory (default=Layer)"
 }
 
 # silent pushd
@@ -51,6 +53,10 @@ do
     ;;
     Module=*)
       module="${i#*=}"
+      shift
+    ;;
+    Interface=*)
+      interface="${i#*=}"
       shift
     ;;
     Socket=*)
@@ -127,6 +133,19 @@ then
   target+="_${module}"
 fi
 
+# check if Interface layer is specified and exists
+if [ ! -z ${interface} ]
+then
+  if [ ! -d "${layerpath}/Interface/${interface}" ]
+  then
+    echo "error: Interface layer <${interface}> not found in <${layerpath}/Interface>"
+    exit 1
+  fi
+  # update target name
+  if_name=$(echo $interface | sed 's|^[^/]*/||')
+  target+="_${if_name}"
+fi
+
 # check if Socket layer is specified and exists
 if [ ! -z ${socket} ]
 then
@@ -165,6 +184,14 @@ then
   # update layer and clayer collection
   layer+=("Socket")
   clayer+=" ../../${layerpath}/Socket/${socket}/Socket.clayer"
+fi
+
+# check if Interface layer is specified
+if [ ! -z ${interface} ]
+then
+  # update layer and clayer collection
+  layer+=("Interface")
+  clayer+=" ../../${layerpath}/Interface/${interface}/Interface.clayer"
 fi
 
 # check if Module layer is specified
@@ -231,6 +258,11 @@ then
   if [ ! -z ${socket} ]
   then
     cat layer.Socket.md >> README.md
+    echo >> README.md
+  fi
+  if [ ! -z ${interface} ]
+  then
+    cat layer.Interface.md >> README.md
     echo >> README.md
   fi
   if [ ! -z ${module} ]
