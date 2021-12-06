@@ -18,7 +18,8 @@
 
 #include <stdint.h>
 
+extern int32_t socket_startup (void);
+
 int32_t network_startup (void) {
-  /* Nothing to do here */
-  return 0;
+  return socket_startup();
 }
