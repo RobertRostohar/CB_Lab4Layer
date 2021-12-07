@@ -30,6 +30,12 @@ Once the application is configured you can:
 
 MQTT messages can be viewed in the [**AWS IoT console**](https://docs.aws.amazon.com/iot/latest/developerguide/view-mqtt-messages.html).
 
+Interface: AWS FreeRTOS+ TCP
+----------------------------
+
+The AWS FreeRTOS+ TCP interface exposes [Secure Sockets](https://docs.aws.amazon.com/freertos/latest/userguide/secure-sockets.html)
+implementation for FreeRTOS+ TCP and connects to [CMSIS-Driver Ethernet](https://arm-software.github.io/CMSIS_5/Driver/html/group__eth__interface__gr.html).
+
 Board: NXP IMXRT1050-EVKB
 -------------------------
 

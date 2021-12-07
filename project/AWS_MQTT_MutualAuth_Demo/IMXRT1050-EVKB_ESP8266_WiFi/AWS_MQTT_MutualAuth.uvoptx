@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>IMXRT1050-EVKB ESP8266 WiFi</TargetName>
+    <TargetName>IMXRT1050-EVKB ESP8266</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

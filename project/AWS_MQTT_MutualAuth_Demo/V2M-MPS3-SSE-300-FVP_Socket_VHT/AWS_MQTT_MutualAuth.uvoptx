@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>V2M-MPS3-SSE-300-FVP Socket</TargetName>
+    <TargetName>V2M-MPS3-SSE-300-FVP</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

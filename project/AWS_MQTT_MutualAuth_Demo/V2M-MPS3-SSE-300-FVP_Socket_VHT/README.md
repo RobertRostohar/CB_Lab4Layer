@@ -35,6 +35,12 @@ Socket: VHT IoT Socket
 This implementation uses an [IoT socket](https://mdk-packs.github.io/IoT_Socket/html/index.html) layer that connects to a 
 [Arm Virtual Hardware](https://www.arm.com/products/development-tools/simulation/virtual-hardware).
 
+Interface: AWS Socket
+---------------------
+
+The AWS Socket interface exposes [Secure Sockets](https://docs.aws.amazon.com/freertos/latest/userguide/secure-sockets.html) and
+connects to [IoT socket](https://mdk-packs.github.io/IoT_Socket/html/index.html).
+
 Board: ARM V2M-MPS3-SSE-300-FVP
 ----------------------------------------------
 
