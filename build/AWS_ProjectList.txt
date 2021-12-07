@@ -1,54 +1,54 @@
-App=AWS_MQTT_MutualAuth Board=32L4R9IDISCOVERY Module=ESP8266 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=32L4R9IDISCOVERY Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=32L4R9IDISCOVERY Module=WizFi360 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Module=WizFi360 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Interface=AWS/FreeRTOS+TCP
-App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=32F746GDISCOVERY Interface=AWS/Socket Socket=lwIP_ETH
-#App=AWS_MQTT_MutualAuth Board=B-L475E-IOT01A Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=FRDM-K32L3A6 Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=FRDM-K32L3A6 Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=FRDM-K32L3A6 Module=WizFi360 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=IMXRT1050-EVKB Module=ESP8266 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=IMXRT1050-EVKB Module=WizFi360 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=IMXRT1050-EVKB Interface=AWS/FreeRTOS+TCP
-#App=AWS_MQTT_MutualAuth Board=IMXRT1050-EVKB Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=IMXRT1050-EVKB Interface=AWS/Socket Socket=lwIP_ETH
-#App=AWS_MQTT_MutualAuth Board=MCB4300 Interface=AWS/FreeRTOS+TCP
-#App=AWS_MQTT_MutualAuth Board=MCB4300 Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=MCB4300 Interface=AWS/Socket Socket=lwIP_ETH
-App=AWS_MQTT_MutualAuth Board=LPC54018-IoT-Module Interface=AWS/Socket Socket=MW-Network_WiFi
-App=AWS_MQTT_MutualAuth Board=LPCXpresso55S69 Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=LPCXpresso55S69 Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=LPCXpresso55S69 Module=WizFi360 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=MIMXRT1064-EVK Module=ESP8266 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=MIMXRT1064-EVK Module=WizFi360 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=MIMXRT1064-EVK Interface=AWS/FreeRTOS+TCP
-#App=AWS_MQTT_MutualAuth Board=MIMXRT1064-EVK Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=MIMXRT1064-EVK Interface=AWS/Socket Socket=lwIP_ETH
-App=AWS_MQTT_MutualAuth Board=NUCLEO-H743ZI Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=NUCLEO-H743ZI Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=NUCLEO-H743ZI Module=WizFi360 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=NUCLEO-H743ZI Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=NUCLEO-H743ZI Interface=AWS/Socket Socket=lwIP_ETH
-App=AWS_MQTT_MutualAuth Board=NUCLEO-L552ZE-Q Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=NUCLEO-L552ZE-Q Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=NUCLEO-L552ZE-Q Module=WizFi360 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Module=WizFi360 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Interface=AWS/FreeRTOS+TCP
-App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=STM32H735G-DK Interface=AWS/Socket Socket=lwIP_ETH
-App=AWS_MQTT_MutualAuth Board=STM32L562E-DK Module=ESP8266 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32L562E-DK Module=ISM43362 Interface=AWS/WiFi
-App=AWS_MQTT_MutualAuth Board=STM32L562E-DK Module=WizFi360 Interface=AWS/WiFi
-#App=AWS_MQTT_MutualAuth Board=Musca-S1 Interface=AWS/WiFi Module=ESP8266
-#App=AWS_MQTT_MutualAuth Board=Musca-S1 Interface=AWS/WiFi Module=ISM43362
-#App=AWS_MQTT_MutualAuth Board=Musca-S1 Interface=AWS/WiFi Module=WizFi360
-App=AWS_MQTT_MutualAuth Board=V2M-MPS3-SSE-300-FVP Interface=AWS/FreeRTOS+TCP
-App=AWS_MQTT_MutualAuth Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=VHT
-App=AWS_MQTT_MutualAuth Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=MW-Network_ETH
-#App=AWS_MQTT_MutualAuth Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=lwIP_ETH
+App=AWS_MQTT_MutualAuth_Demo Board=32L4R9IDISCOVERY Module=ESP8266 Interface=AWS/WiFi
+#App=AWS_MQTT_MutualAuth_Demo Board=32L4R9IDISCOVERY Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=32L4R9IDISCOVERY Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Interface=AWS/FreeRTOS+TCP
+App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=32F746GDISCOVERY Interface=AWS/Socket Socket=lwIP_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=B-L475E-IOT01A Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=FRDM-K32L3A6 Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=FRDM-K32L3A6 Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=FRDM-K32L3A6 Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=IMXRT1050-EVKB Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=IMXRT1050-EVKB Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=IMXRT1050-EVKB Interface=AWS/FreeRTOS+TCP
+App=AWS_MQTT_MutualAuth_Demo Board=IMXRT1050-EVKB Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=IMXRT1050-EVKB Interface=AWS/Socket Socket=lwIP_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=MCB4300 Interface=AWS/FreeRTOS+TCP
+#App=AWS_MQTT_MutualAuth_Demo Board=MCB4300 Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=MCB4300 Interface=AWS/Socket Socket=lwIP_ETH
+App=AWS_MQTT_MutualAuth_Demo Board=LPC54018-IoT-Module Interface=AWS/Socket Socket=MW-Network_WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=LPCXpresso55S69 Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=LPCXpresso55S69 Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=LPCXpresso55S69 Module=WizFi360 Interface=AWS/WiFi
+#App=AWS_MQTT_MutualAuth_Demo Board=MIMXRT1064-EVK Module=ESP8266 Interface=AWS/WiFi
+#App=AWS_MQTT_MutualAuth_Demo Board=MIMXRT1064-EVK Module=WizFi360 Interface=AWS/WiFi
+#App=AWS_MQTT_MutualAuth_Demo Board=MIMXRT1064-EVK Interface=AWS/FreeRTOS+TCP
+#App=AWS_MQTT_MutualAuth_Demo Board=MIMXRT1064-EVK Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=MIMXRT1064-EVK Interface=AWS/Socket Socket=lwIP_ETH
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-H743ZI Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-H743ZI Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-H743ZI Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-H743ZI Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-H743ZI Interface=AWS/Socket Socket=lwIP_ETH
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-L552ZE-Q Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-L552ZE-Q Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=NUCLEO-L552ZE-Q Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Module=WizFi360 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Interface=AWS/FreeRTOS+TCP
+App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=STM32H735G-DK Interface=AWS/Socket Socket=lwIP_ETH
+App=AWS_MQTT_MutualAuth_Demo Board=STM32L562E-DK Module=ESP8266 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32L562E-DK Module=ISM43362 Interface=AWS/WiFi
+App=AWS_MQTT_MutualAuth_Demo Board=STM32L562E-DK Module=WizFi360 Interface=AWS/WiFi
+#App=AWS_MQTT_MutualAuth_Demo Board=Musca-S1 Interface=AWS/WiFi Module=ESP8266
+#App=AWS_MQTT_MutualAuth_Demo Board=Musca-S1 Interface=AWS/WiFi Module=ISM43362
+#App=AWS_MQTT_MutualAuth_Demo Board=Musca-S1 Interface=AWS/WiFi Module=WizFi360
+App=AWS_MQTT_MutualAuth_Demo Board=V2M-MPS3-SSE-300-FVP Interface=AWS/FreeRTOS+TCP
+App=AWS_MQTT_MutualAuth_Demo Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=VHT
+App=AWS_MQTT_MutualAuth_Demo Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=MW-Network_ETH
+#App=AWS_MQTT_MutualAuth_Demo Board=V2M-MPS3-SSE-300-FVP Interface=AWS/Socket Socket=lwIP_ETH
