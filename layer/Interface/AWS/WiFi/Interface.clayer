@@ -28,29 +28,29 @@
     </layer>
   </layers>
 
-  <packages>
-  </packages>
+  <packages/>
 
   <compilers>
     <compiler name="AC6" version="6.0.0:6.99.99"/>
   </compilers>
 
+  <components/>
+
   <files>
-    <group layer="Interface" name="App">
+    <group name="App">
       <cflags add="-I ./Interfaces -I ./amazon-freertos/demos/include -I ./amazon-freertos/libraries/abstractions/platform/freertos/include -I ./amazon-freertos/libraries/abstractions/platform/include -I ./amazon-freertos/libraries/c_sdk/standard/common/include -I ./amazon-freertos/libraries/logging/include -I ./config_files -Wno-pragma-pack" compiler="AC6"/>
-      <file category="sourceC" layer="App" name="./network_startup.c"/>
+      <file category="sourceC" layer="Interface" name="./network_startup.c"/>
     </group>
-    <group layer="Interface" name="config_files">
-      <file category="header" layer="App" name="./config_files/aws_iot_network_config.h"/>
-      <file category="header" layer="App" name="./config_files/aws_wifi_config.h"/>
-      <file category="header" layer="App" name="./config_files/FreeRTOSIPConfig.h"/>
-      <file category="header" layer="App" name="./config_files/iot_secure_sockets_config.h"/>
+    <group name="config_files">
+      <file category="header" layer="Interface" name="./config_files/aws_iot_network_config.h"/>
+      <file category="header" layer="Interface" name="./config_files/aws_wifi_config.h"/>
+      <file category="header" layer="Interface" name="./config_files/FreeRTOSIPConfig.h"/>
+      <file category="header" layer="Interface" name="./config_files/iot_secure_sockets_config.h"/>
     </group>
-    <group layer="Interface" name="interfaces">
+    <group name="interfaces">
       <cflags add="-I ./Interfaces -I ./amazon-freertos/demos/include -I ./amazon-freertos/libraries/abstractions/secure_sockets/include -I ./amazon-freertos/libraries/abstractions/wifi/include -I ./amazon-freertos/libraries/c_sdk/standard/common/include/private -I ./amazon-freertos/libraries/freertos_plus/standard/crypto/include -I ./amazon-freertos/libraries/freertos_plus/standard/tls/include -I ./amazon-freertos/libraries/logging/include -I ./config_files -Wno-macro-redefined -Wno-pragma-pack" compiler="AC6"/>
-      <file category="sourceC" layer="App" name="./Interfaces/iot_secure_sockets.c"/>
-      <file category="sourceC" layer="App" name="./Interfaces/iot_wifi.c"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/wifi/include/iot_wifi.h"/>
+      <file category="sourceC" layer="Interface" name="./Interfaces/iot_secure_sockets.c"/>
+      <file category="sourceC" layer="Interface" name="./Interfaces/iot_wifi.c"/>
     </group>
   </files>
 </cprj>

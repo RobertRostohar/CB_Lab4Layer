@@ -34,6 +34,7 @@
 
   <packages>
     <package name="CMSIS-FreeRTOS" vendor="ARM" version="10.4.3:10.4.3"/>
+    <package name="CMSIS" vendor="ARM"/>
     <package name="mbedTLS" vendor="ARM" version="1.7.0:1.7.0"/>
     <package name="backoffAlgorithm" vendor="AWS" version="1.0.0-Beta:1.0.0-Beta"/>
     <package name="coreMQTT" vendor="AWS" version="1.1.0-Beta:1.1.0-Beta"/>
@@ -47,7 +48,7 @@
   </compilers>
 
   <components>
-    <component Cclass="CMSIS" Cgroup="RTOS2" Csub="FreeRTOS" Cvariant="Cortex-M" Cvendor="ARM"/>
+    <component Cclass="CMSIS" Cgroup="RTOS2" Csub="FreeRTOS" Cvariant="Cortex-M" Cvendor="ARM" layer="App"/>
     <component Cclass="FreeRTOS" Cgroup="backoffAlgorithm" Cvendor="AWS" layer="App"/>
     <component Cclass="FreeRTOS" Cgroup="coreMQTT" Cvendor="AWS" layer="App">
       <cflags add="-I ./amazon-freertos/libraries/logging/include -I ./config_files" compiler="AC6"/>
@@ -74,7 +75,7 @@
   </components>
 
   <files>
-    <group layer="App" name="App">
+    <group name="App">
       <cflags add="-I ./Interfaces -I ./amazon-freertos/demos/include -I ./amazon-freertos/libraries/abstractions/platform/freertos/include -I ./amazon-freertos/libraries/abstractions/platform/include -I ./amazon-freertos/libraries/c_sdk/standard/common/include -I ./amazon-freertos/libraries/logging/include -I ./config_files -Wno-pragma-pack" compiler="AC6"/>
       <file category="sourceC" layer="App" name="./app_main.c"/>
     </group>
@@ -115,9 +116,6 @@
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/abstractions/platform/freertos/iot_clock_freertos.c"/>
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/abstractions/platform/freertos/iot_threads_freertos.c"/>
       <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/platform/freertos/include/platform/iot_platform_types_freertos.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/platform/include/platform/iot_clock.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/platform/include/platform/iot_network.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/platform/include/platform/iot_threads.h"/>
     </group>
     <group layer="App" name="libraries_abstractions_platform_include">
       <file category="header" layer="App" name="./amazon-freertos/libraries/abstractions/platform/include/platform/iot_clock.h"/>
@@ -143,17 +141,6 @@
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/iot_device_metrics.c"/>
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/iot_init.c"/>
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/iot_static_memory_common.c"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_atomic.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_init.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_linear_containers.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_logging_setup.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_taskpool.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_default_root_certificates.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_error.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_lib_init.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_logging.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_static_memory.h"/>
-      <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/private/iot_taskpool_internal.h"/>
     </group>
     <group layer="App" name="libraries_c_sdk_standard_common_include">
       <file category="header" layer="App" name="./amazon-freertos/libraries/c_sdk/standard/common/include/iot_atomic.h"/>
@@ -192,7 +179,7 @@
       <file category="sourceC" layer="App" name="./amazon-freertos/libraries/freertos_plus/standard/tls/src/iot_tls.c"/>
       <file category="header" layer="App" name="./amazon-freertos/libraries/freertos_plus/standard/tls/include/iot_tls.h"/>
     </group>
-    <group layer="App" name="config_files">
+    <group name="config_files">
       <file category="header" layer="App" name="./config_files/aws_demo_config.h"/>
       <file category="header" layer="App" name="./config_files/aws_mbedtls_config.h"/>
       <file category="header" layer="App" name="./config_files/core_mqtt_config.h"/>
@@ -200,7 +187,7 @@
       <file category="header" layer="App" name="./config_files/iot_config.h"/>
       <file category="header" layer="App" name="./config_files/mqtt_demo_mutual_auth_config.h"/>
     </group>
-    <group layer="App" name="interfaces">
+    <group name="interfaces">
       <cflags add="-I ./Interfaces -I ./amazon-freertos/demos/include -I ./amazon-freertos/libraries/abstractions/secure_sockets/include -I ./amazon-freertos/libraries/abstractions/wifi/include -I ./amazon-freertos/libraries/c_sdk/standard/common/include/private -I ./amazon-freertos/libraries/freertos_plus/standard/crypto/include -I ./amazon-freertos/libraries/freertos_plus/standard/tls/include -I ./amazon-freertos/libraries/logging/include -I ./config_files -Wno-macro-redefined -Wno-pragma-pack" compiler="AC6"/>
       <file category="sourceC" layer="App" name="./Interfaces/core_pkcs11_pal.c"/>
       <file category="header" layer="App" name="./Interfaces/threading_alt.h"/>

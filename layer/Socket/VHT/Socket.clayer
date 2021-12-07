@@ -39,6 +39,10 @@
   <components/>
 
   <files>
+    <group name="App">
+      <cflags add="-I ./Interfaces -I ./amazon-freertos/demos/include -I ./amazon-freertos/libraries/abstractions/platform/freertos/include -I ./amazon-freertos/libraries/abstractions/platform/include -I ./amazon-freertos/libraries/c_sdk/standard/common/include -I ./amazon-freertos/libraries/logging/include -I ./config_files -Wno-pragma-pack" compiler="AC6"/>
+      <file category="sourceC" layer="Socket" name="./socket_startup.c"/>
+    </group>
     <group layer="Socket" name="IoT_Socket">
       <cflags add="-DVSOCKET_IO_BASE=&quot;0x4FEE0000UL&quot; -I ./iot_socket/include" compiler="AC6"/>
       <file category="sourceC" layer="Socket" name="./IoT_Socket/source/iot_socket.c"/>
