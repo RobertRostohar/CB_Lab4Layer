@@ -56,7 +56,7 @@
 
   <target Bname="EVKB-IMXRT1050_MDK" Bvendor="NXP" Bversion="Rev. A1" Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="DP_FPU" Dmve="NO_MVE" Dname="MIMXRT1052DVL6B" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="NXP:11">
     <output intdir="./Objects/" name="image" outdir="./Objects/" type="exe"/>
-    <ldflags add="--diag_suppress 6314,6329 --strict --predefine=&quot;-DXIP_BOOT_HEADER_ENABLE=1&quot; --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./RTE/Device/MIMXRT1052DVL6B/MIMXRT1052xxxxx_flexspi_nor.scf"/>
+    <ldflags add="--diag_suppress 6314,6329 --strict --predefine=&quot;-DXIP_BOOT_HEADER_ENABLE=1&quot; --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./RTE/Device/MIMXRT1052DVL6B/MIMXRT1052xxxxx_flexspi_nor_sdram.scf"/>
     <cflags add="-O1 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -ffunction-sections -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-4 -std=c99 -xc" compiler="AC6"/>
     <asflags add="-gdwarf-4 -masm=auto" compiler="AC6"/>
     <includes>.</includes>
