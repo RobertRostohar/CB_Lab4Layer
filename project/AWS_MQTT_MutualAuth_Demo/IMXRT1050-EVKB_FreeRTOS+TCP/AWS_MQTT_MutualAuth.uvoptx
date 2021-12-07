@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>IMXRT1050-EVKB FreeRTOS+TCP</TargetName>
+    <TargetName>IMXRT1050-EVKB</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

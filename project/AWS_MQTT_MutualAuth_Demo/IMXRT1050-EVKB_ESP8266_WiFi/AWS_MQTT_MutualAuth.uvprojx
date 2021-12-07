@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>IMXRT1050-EVKB ESP8266 WiFi</TargetName>
+      <TargetName>IMXRT1050-EVKB ESP8266</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>6170000::V6.17::ARMCLANG</pCCUsed>
@@ -370,7 +370,7 @@
             <TextAddressRange>0x00200000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>./RTE/Device/MIMXRT1052DVL6B/MIMXRT1052xxxxx_flexspi_nor.scf</ScatterFile>
+            <ScatterFile>./RTE/Device/MIMXRT1052DVL6B/MIMXRT1052xxxxx_flexspi_nor_sdram.scf</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc>--predefine="-DXIP_BOOT_HEADER_ENABLE=1" --summary_stderr --info summarysizes --load_addr_map_info --entry=Reset_Handler</Misc>
@@ -1802,72 +1802,72 @@
       </filter>
       <package name="CMSIS" vendor="ARM">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </package>
       <package name="CMSIS-Driver" vendor="ARM">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </package>
       <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="mbedTLS" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="ARM" version="1.7.0">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="backoffAlgorithm" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.0.0-Beta">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="coreMQTT" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.1.0-Beta">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="coreMQTT_Agent" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.0.1-Beta">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="corePKCS11" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="3.0.0-Beta">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="PKCS11" vendor="Arm-Packs">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </package>
       <package name="ARM_Compiler" vendor="Keil">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </package>
       <package name="IMXRT1050-EVKB_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/IMXRT1050-EVKB_BSP/" vendor="Keil" version="1.0.0">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="iMXRT105x_MWP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.4.0">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
       <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0">
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi" versionMatchMode="fixed"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266" versionMatchMode="fixed"/>
         </targetInfos>
       </package>
     </packages>
@@ -1875,7 +1875,7 @@
       <board Bname="EVKB-IMXRT1050_MDK" Bvendor="NXP" Bversion="Rev. A1">
         <package name="IMXRT1050-EVKB_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/IMXRT1050-EVKB_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </board>
     </boards>
@@ -1883,49 +1883,49 @@
       <api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" exclusive="0">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="Ethernet PHY" exclusive="0">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="2.4.0" Cclass="CMSIS Driver" Cgroup="MCI" exclusive="0">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="2.4.0" Cclass="CMSIS Driver" Cgroup="USART" exclusive="0">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" exclusive="1">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="1.1.0" Cclass="CMSIS Driver" Cgroup="WiFi" exclusive="0">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="2.1.3" Cclass="CMSIS" Cgroup="RTOS2" exclusive="1">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
       <api Capiversion="2.4.0-errata1" Cclass="Security" Cgroup="PKCS11" exclusive="1">
         <package name="PKCS11" schemaVersion="1.6" url="https://github.com/MDK-Packs/Pack/raw/master/PKCS11/" vendor="Arm-Packs" version="1.0.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </api>
     </apis>
@@ -1933,61 +1933,61 @@
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Config" Cvariant="CMSIS RTOS2" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Config CMSIS RTOS2" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Core" Cvariant="Cortex-M" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Core CM" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Event Groups" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Event Groups" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Heap" Cvariant="Heap_5" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Heap" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Stream Buffer" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Stream Buffer" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Timers" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Timers" layer="App">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="2.4.0" Cclass="CMSIS Driver" Cgroup="USART" Csub="Custom" Cvendor="ARM" Cversion="1.0.0" custom="1" layer="Board">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.5.0" condition="ARMv6_7_8-M Device" layer="Board">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="2.1.3" Cclass="CMSIS" Cgroup="RTOS2" Csub="FreeRTOS" Cvariant="Cortex-M" Cvendor="ARM" Cversion="10.4.3" condition="CMSIS RTOS2 FreeRTOS CortexM">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Security" Cgroup="mbed TLS" Cvendor="ARM" Cversion="2.24.0" layer="App">
         <package name="mbedTLS" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="ARM" version="1.7.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <Define>MBEDTLS_CONFIG_FILE=\"aws_mbedtls_config.h\"</Define>
               <MiscControls>-I./Interfaces -I./config_files</MiscControls>
@@ -1998,13 +1998,13 @@
       <component Cclass="FreeRTOS" Cgroup="backoffAlgorithm" Cvendor="AWS" Cversion="1.0.0" layer="App">
         <package name="backoffAlgorithm" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.0.0-Beta"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="FreeRTOS" Cgroup="coreMQTT Agent" Cvendor="AWS" Cversion="1.0.1" condition="core_mqtt_agent_library Condition" layer="App">
         <package name="coreMQTT_Agent" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.0.1-Beta"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <MiscControls>-I ./amazon-freertos/libraries/logging/include -I ./config_files</MiscControls>
             </c>
@@ -2014,7 +2014,7 @@
       <component Cclass="FreeRTOS" Cgroup="coreMQTT" Cvendor="AWS" Cversion="1.1.0" layer="App">
         <package name="coreMQTT" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="1.1.0-Beta"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <MiscControls>-I ./amazon-freertos/libraries/logging/include -I ./config_files</MiscControls>
             </c>
@@ -2024,7 +2024,7 @@
       <component Cclass="FreeRTOS" Cgroup="corePKCS11" Cvariant="Custom" Cvendor="AWS" Cversion="3.0.0" condition="core_pkcs11_custom_port Condition" layer="App">
         <package name="corePKCS11" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="3.0.0-Beta"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <Define>MBEDTLS_CONFIG_FILE=\"aws_mbedtls_config.h\"</Define>
               <MiscControls>-I./Interfaces -I./amazon-freertos/libraries/logging/include -I./config_files -Wno-macro-redefined</MiscControls>
@@ -2035,43 +2035,43 @@
       <component Capiversion="2.4.0-errata1" Cclass="Security" Cgroup="PKCS11" Cvariant="No Implementation" Cvendor="AWS" Cversion="3.0.0" layer="App">
         <package name="corePKCS11" schemaVersion="1.7.2" url="https://github.com/FreeRTOS/CMSIS/releases/download/Beta/" vendor="AWS" version="3.0.0-Beta"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil" Cversion="1.4.0" condition="Cortex-M Device" layer="Board">
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDERR" Cvariant="User" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M" layer="Board">
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDIN" Cvariant="User" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M" layer="Board">
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="User" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M" layer="Board">
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="2.1.0" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Cvendor="Keil" Cversion="1.2.0" condition="MIMXRT105x CMSIS EMAC" layer="Board">
         <package name="iMXRT105x_MWP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.4.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="2.0.0" Cclass="CMSIS Driver" Cgroup="Ethernet PHY" Csub="KSZ8081RNA" Cvendor="Keil" Cversion="6.3.0" condition="CMSIS Core" layer="Board">
         <package name="CMSIS-Driver" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="ARM" version="2.6.1"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <Define>ETH_PHY_REF_CLK_50M="1"</Define>
               <MiscControls/>
@@ -2082,157 +2082,157 @@
       <component Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="MCI" Cvendor="Keil" Cversion="1.3.0" condition="MIMXRT105x CMSIS MCI" layer="Board">
         <package name="iMXRT105x_MWP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.4.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant="IMXRT1050-EVKB" Cvendor="Keil" Cversion="1.0.1" condition="IMXRT1050-EVKB VIO" layer="Board">
         <package name="IMXRT1050-EVKB_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/IMXRT1050-EVKB_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="1.1.0" Cclass="CMSIS Driver" Cgroup="WiFi" Csub="ESP8266" Cvariant="UART" Cvendor="Keil" Cversion="1.4.0" condition="CMSIS Core with RTOS2 and USART Driver" layer="Module">
         <package name="CMSIS-Driver" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="ARM" version="2.6.1"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Board Support" Cgroup="SDK Drivers" Csub="evkbimxrt1050" Cvendor="NXP" Cversion="2.0.1" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device" layer="Board">
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Capiversion="2.3.0" Cclass="CMSIS Driver" Cgroup="USART" Csub="lpuart_cmsis" Cvendor="NXP" Cversion="2.2.0" condition="device.MIMXRT1052_AND_CMSIS_Driver_Include.USART_AND_RTE_Device_AND_driver.lpuart_AND_driver.lpuart_edma" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="CMSIS" Csub="MIMXRT1052_header" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_CMSIS_Include_core_cm" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="CMSIS" Csub="MIMXRT1052_system" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_device.MIMXRT1052_CMSIS" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="clock" Cvendor="NXP" Cversion="2.4.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="common" Cvendor="NXP" Cversion="2.3.0" condition="device.MIMXRT1052_AND_device.MIMXRT1052_CMSIS_AND_driver.clock" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="dmamux" Cvendor="NXP" Cversion="2.0.5" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="edma" Cvendor="NXP" Cversion="2.4.2" condition="device.MIMXRT1052_AND_driver.common_AND_driver.dmamux" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="enet" Cvendor="NXP" Cversion="2.5.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="fxos8700cq" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="gpio" Cvendor="NXP" Cversion="2.0.5" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="i2c" Cvendor="NXP" Cversion="2.3.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="iomuxc" Cvendor="NXP" Cversion="2.0.1" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="lists" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart" Cvendor="NXP" Cversion="2.5.1" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_adapter" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_driver.common_AND_driver.lpuart" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_edma" Cvendor="NXP" Cversion="2.5.0" condition="device.MIMXRT1052_AND_driver.edma_AND_driver.lpuart" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="nic301" Cvendor="NXP" Cversion="2.0.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="sdhc" Cvendor="NXP" Cversion="2.8.0" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Drivers" Csub="xip_device" Cvendor="NXP" Cversion="2.0.2" condition="device.MIMXRT1052_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_driver.edma" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_component.serial_manager_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi">
+          <targetInfo name="IMXRT1050-EVKB ESP8266">
             <c>
               <Define>SDK_DEBUGCONSOLE="1" __MCUXPRESSO</Define>
               <MiscControls/>
@@ -2243,19 +2243,19 @@
       <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager" Cvendor="NXP" Cversion="1.0.1" condition="device.MIMXRT1052_AND__component.serial_manager_swo_OR_component.serial_manager_uart_OR_component.serial_manager_virtual__AND_component.lists_AND_driver.common" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager_uart" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_component.lpuart_adapter_AND_component.serial_manager_AND_driver.lpuart" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system" layer="Board">
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </component>
     </components>
@@ -2265,7 +2265,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="project_template\board.h" version="1.0.0">
@@ -2273,7 +2273,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="project_template\clock_config.c" version="1.0.0">
@@ -2281,7 +2281,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="project_template\clock_config.h" version="1.0.0">
@@ -2289,7 +2289,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="project_template\dcd.c" version="1.0.0">
@@ -2297,7 +2297,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="project_template\dcd.h" version="1.0.0">
@@ -2305,7 +2305,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="project_template\peripherals.c" version="1.0.0">
@@ -2313,7 +2313,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="project_template\peripherals.h" version="1.0.0">
@@ -2321,7 +2321,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="project_template\pin_mux.c" version="1.0.0">
@@ -2329,7 +2329,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="project_template\pin_mux.h" version="1.0.0">
@@ -2337,7 +2337,7 @@
         <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="evkbimxrt1050" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND___component.serial_manager_AND_utility.debug_console__OR_utility.debug_console_lite__AND_component.lpuart_adapter_AND_device.MIMXRT1052_startup_AND_driver.clock_AND_driver.common_AND_driver.igpio_AND_driver.iomuxc_AND_driver.lpuart_AND_driver.nic301_AND_driver.xip_board.evkbimxrt1050_AND_driver.xip_device"/>
         <package name="EVKB-IMXRT1050_BSP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="WiFi\ESP8266\Config\WiFi_ESP8266_Config.h" version="1.0.0">
@@ -2345,7 +2345,7 @@
         <component Capiversion="1.1.0" Cclass="CMSIS Driver" Cgroup="WiFi" Csub="ESP8266" Cvariant="UART" Cvendor="Keil" Cversion="1.4.0" condition="CMSIS Core with RTOS2 and USART Driver"/>
         <package name="CMSIS-Driver" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="ARM" version="2.6.1"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="Config\EventRecorderConf.h" version="1.1.0">
@@ -2353,7 +2353,7 @@
         <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil" Cversion="1.4.0" condition="Cortex-M Device"/>
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="linkerScript" condition="mdk" name="arm\MIMXRT1052xxxxx_flexspi_nor.scf" version="1.1.0">
@@ -2361,7 +2361,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="linkerScript" condition="mdk" name="arm\MIMXRT1052xxxxx_flexspi_nor_sdram.scf" version="1.1.0">
@@ -2369,7 +2369,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="linkerScript" condition="mdk" name="arm\MIMXRT1052xxxxx_ram.scf" version="1.1.0">
@@ -2377,7 +2377,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="linkerScript" condition="mdk" name="arm\MIMXRT1052xxxxx_sdram.scf" version="1.1.0">
@@ -2385,7 +2385,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="linkerScript" condition="mdk" name="arm\MIMXRT1052xxxxx_sdram_txt.scf" version="1.1.0">
@@ -2393,7 +2393,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="template\RTE_Device.h" version="1.0.0">
@@ -2401,7 +2401,7 @@
         <component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cvendor="NXP" Cversion="1.0.0" condition="device.MIMXRT1052_AND_driver.edma"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="sourceAsm" condition="mdk" name="arm\startup_MIMXRT1052.S" version="1.1.0">
@@ -2409,7 +2409,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="NXP" Cversion="1.1.0" condition="device.MIMXRT1052_AND__armclang_OR_iar__AND_device.MIMXRT1052_system"/>
         <package name="MIMXRT1052_DFP" schemaVersion="1.4" url="https://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="13.1.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" condition="CoreM" name="CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h" version="10.3.0">
@@ -2417,7 +2417,7 @@
         <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Config" Cvariant="CMSIS RTOS2" Cvendor="ARM" Cversion="10.4.3" condition="FreeRTOS Config CMSIS RTOS2"/>
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.3"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="configs\mbedTLS_config.h" version="2.24.0">
@@ -2425,7 +2425,7 @@
         <component Cclass="Security" Cgroup="mbed TLS" Cvendor="ARM" Cversion="2.24.0"/>
         <package name="mbedTLS" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="ARM" version="1.7.0"/>
         <targetInfos>
-          <targetInfo name="IMXRT1050-EVKB ESP8266 WiFi"/>
+          <targetInfo name="IMXRT1050-EVKB ESP8266"/>
         </targetInfos>
       </file>
     </files>
@@ -2462,6 +2462,17 @@
         <LayCat>Board</LayCat>
         <LayLic>BSD 3-Clause, Apache 2.0</LayLic>
         <LayDesc>Board setup with interfaces</LayDesc>
+        <interfaces>
+          <consumes id="RTOS2"/>
+          <provides id="C_ETH" value="0"/>
+          <provides id="C_MCI" value="0"/>
+          <provides id="A_UART" value="3"/>
+          <provides id="C_VIO"/>
+          <provides id="STDOUT"/>
+          <provides id="STDIN"/>
+          <provides id="STDERR"/>
+          <provides id="Heap" value="65536"/>
+        </interfaces>
       </Layer>
       <Layer>
         <LayName>Interface</LayName>
@@ -3183,6 +3194,11 @@
       <LayAsnItem>
         <LayAsnType>3</LayAsnType>
         <LayAsnName>libraries_abstractions_wifi</LayAsnName>
+        <LayAsnLayerName>App</LayAsnLayerName>
+      </LayAsnItem>
+      <LayAsnItem>
+        <LayAsnType>2</LayAsnType>
+        <LayAsnName>.\amazon-freertos\libraries\abstractions\wifi\include\iot_wifi.h</LayAsnName>
         <LayAsnLayerName>App</LayAsnLayerName>
       </LayAsnItem>
     </LayAssign>
