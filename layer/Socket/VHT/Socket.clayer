@@ -44,9 +44,9 @@
       <file category="sourceC" layer="Socket" name="./socket_startup.c"/>
     </group>
     <group layer="Socket" name="IoT_Socket">
-      <cflags add="-DVSOCKET_IO_BASE=&quot;0x4FEE0000UL&quot; -I ./iot_socket/include" compiler="AC6"/>
+      <cflags add="-DVSOCKET_IO_BASE=&quot;0x4FEE0000UL&quot; -I ./IoT_Socket/include" compiler="AC6"/>
       <file category="sourceC" layer="Socket" name="./IoT_Socket/source/iot_socket.c"/>
-      <file category="header" layer="Socket" name="./iot_socket/include/iot_socket.h"/>
+      <file category="header" layer="Socket" name="./IoT_Socket/include/iot_socket.h"/>
       <file category="header" layer="Socket" name="./IoT_Socket/source/iot_socket_vht.h"/>
     </group>
   </files>

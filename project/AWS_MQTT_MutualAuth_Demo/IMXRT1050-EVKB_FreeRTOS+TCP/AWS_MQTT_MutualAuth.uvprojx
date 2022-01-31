@@ -10,7 +10,7 @@
       <TargetName>IMXRT1050-EVKB</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6170000::V6.17::ARMCLANG</pCCUsed>
+      <pCCUsed>6160000::V6.16::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -188,7 +188,7 @@
             <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
-            <StupSel>0</StupSel>
+            <StupSel>8</StupSel>
             <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
@@ -259,32 +259,32 @@
                 <Size>0x40000</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
               <OCR_RVCT4>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x200000</StartAddress>
                 <Size>0x18000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
               <OCR_RVCT6>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x20200000</StartAddress>
                 <Size>0x40000</Size>
               </OCR_RVCT6>
@@ -299,12 +299,12 @@
                 <Size>0x0</Size>
               </OCR_RVCT8>
               <OCR_RVCT9>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
                 <Size>0x20000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x20000</Size>
               </OCR_RVCT10>
@@ -336,7 +336,7 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>-Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-unused-macros -gdwarf-4 -xc</MiscControls>
+              <MiscControls></MiscControls>
               <Define>SDK_I2C_BASED_COMPONENT_USED SKIP_SYSCLK_INIT XIP_BOOT_HEADER_DCD_ENABLE=1 XIP_BOOT_HEADER_ENABLE=1 XIP_EXTERNAL_FLASH=1</Define>
               <Undefine></Undefine>
               <IncludePath>.</IncludePath>

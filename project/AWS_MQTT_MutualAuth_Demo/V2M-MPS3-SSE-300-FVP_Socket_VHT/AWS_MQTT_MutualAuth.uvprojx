@@ -10,7 +10,7 @@
       <TargetName>V2M-MPS3-SSE-300-FVP</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6170000::V6.17::ARMCLANG</pCCUsed>
+      <pCCUsed>6160000::V6.16::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -336,7 +336,7 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>-Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-unused-macros -gdwarf-4 -xc</MiscControls>
+              <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
@@ -1876,7 +1876,7 @@
                   <MiscControls></MiscControls>
                   <Define>VSOCKET_IO_BASE="0x4FEE0000UL"</Define>
                   <Undefine></Undefine>
-                  <IncludePath>./iot_socket/include</IncludePath>
+                  <IncludePath>./IoT_Socket/include</IncludePath>
                 </VariousControls>
               </Cads>
               <Aads>
@@ -1908,7 +1908,7 @@
             <File>
               <FileName>iot_socket.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\iot_socket\include\iot_socket.h</FilePath>
+              <FilePath>.\IoT_Socket\include\iot_socket.h</FilePath>
             </File>
             <File>
               <FileName>iot_socket_vht.h</FileName>
@@ -2885,7 +2885,7 @@
       </LayAsnItem>
       <LayAsnItem>
         <LayAsnType>2</LayAsnType>
-        <LayAsnName>.\iot_socket\include\iot_socket.h</LayAsnName>
+        <LayAsnName>.\IoT_Socket\include\iot_socket.h</LayAsnName>
         <LayAsnLayerName>Socket</LayAsnLayerName>
       </LayAsnItem>
       <LayAsnItem>
