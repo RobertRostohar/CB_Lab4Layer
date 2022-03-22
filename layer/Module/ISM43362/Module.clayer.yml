@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/0.9.1/tools/projmgr/schemas/clayer.schema.json
+
+layer:
+  # type: Module
+  # name: ISM43362
+  description: Arduino module with ISM43362 WiFi chip
+
+  # interfaces:
+  #   - consumes:
+  #     - A_SPI: *
+  #     - A_IO9_I:
+  #     - A_IO10_O:
+  #     - RTOS2:
+  #   - provides:
+  #     - C_WiFi: 0
+
+  # packs:
+  #   - pack: ARM::CMSIS
+  #   - pack: ARM::CMSIS-Driver
+
+  components:
+    - component: Keil::CMSIS Driver:WiFi:ISM43362&SPI

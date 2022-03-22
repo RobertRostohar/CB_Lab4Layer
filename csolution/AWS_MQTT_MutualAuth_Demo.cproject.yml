@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/0.9.1/tools/projmgr/schemas/cproject.schema.json
+
+project:
+
+  layers:
+    - layer: ../layer/App//AWS_MQTT_MutualAuth_Demo/App.clayer.yml
+
+    - layer: ../layer/Board/IMXRT1050-EVKB/Board.clayer.yml
+      for-type: 
+        - +EVKB_IMXRT1050_ESP8266
+        - +EVKB_IMXRT1050_WizFi360
+        - +EVKB_IMXRT1050_FreeRTOS_TCP
+        - +EVKB_IMXRT1050_MW-Network_ETH
+        - +EVKB_IMXRT1050_lwIP_ETH
+
+    - layer: ../layer/Board/VHT_MPS2_Cortex-M7/Board.clayer.yml
+      for-type:
+        - +VHT_CM7_VSocket
+        - +VHT_CM7_FreeRTOS_TCP
+        - +VHT_CM7_MW-Network_ETH
+        - +VHT_CM7_lwIP_ETH
+
+    - layer: ../layer/Module/ESP8266/Module.clayer.yml
+      for-type: +EVKB_IMXRT1050_ESP8266
+
+    - layer: ../layer/Module/WizFi360/Module.clayer.yml
+      for-type: +EVKB_IMXRT1050_WizFi360
+
+    # - layer: ../layer/Interface/AWS/FreeRTOS+TCP/Interface.clayer.yml
+    #   for-type:
+    #     - +EVKB_IMXRT1050_FreeRTOS_TCP
+    #     - +VHT_CM7_FreeRTOS_TCP
+
+    - layer: ../layer/Interface/AWS/Socket/Interface.clayer.yml
+      for-type:
+        - +EVKB_IMXRT1050_MW-Network_ETH
+        - +EVKB_IMXRT1050_lwIP_ETH
+        - +VHT_CM7_VSocket
+        - +VHT_CM7_MW-Network_ETH
+        - +VHT_CM7_lwIP_ETH
+
+    - layer: ../layer/Interface/AWS/WiFi/Interface.clayer.yml
+      for-type:
+        - +EVKB_IMXRT1050_ESP8266
+        - +EVKB_IMXRT1050_WizFi360
+
+    - layer: ../layer/Socket/VHT/Socket.clayer.yml
+      for-type:
+        - +EVKB_IMXRT1050_MW-Network_ETH
+        - +EVKB_IMXRT1050_lwIP_ETH
+        - +VHT_CM7_VSocket
+        - +VHT_CM7_MW-Network_ETH
+        - +VHT_CM7_lwIP_ETH
