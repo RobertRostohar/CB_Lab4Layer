@@ -19,6 +19,9 @@ solution:
     #   # board: EVKB-IMXRT1050_MDK
     #   device: MIMXRT1052DVL6B
 
+    - type: STM32H745I-DISCO_ESP8266
+      device: STM32H745XIHx:CM7
+
     - type: VHT_CM7_VSocket
       device: ARM::CMSDK_CM7_DP_VHT
     # - type: VHT_CM7_FreeRTOS_TCP

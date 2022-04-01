@@ -13,6 +13,10 @@ project:
         - +EVKB_IMXRT1050_MW-Network_ETH
         - +EVKB_IMXRT1050_lwIP_ETH
 
+    - layer: ../layer/Board/STM32H745I-DISCO_MultiCore/CM7/Board.clayer.yml
+      for-type:
+        - +STM32H745I-DISCO_ESP8266
+
     - layer: ../layer/Board/VHT_MPS2_Cortex-M7/Board.clayer.yml
       for-type:
         - +VHT_CM7_VSocket
@@ -21,7 +25,9 @@ project:
         - +VHT_CM7_lwIP_ETH
 
     - layer: ../layer/Module/ESP8266/Module.clayer.yml
-      for-type: +EVKB_IMXRT1050_ESP8266
+      for-type:
+        - +EVKB_IMXRT1050_ESP8266
+        - +STM32H745I-DISCO_ESP8266
 
     - layer: ../layer/Module/WizFi360/Module.clayer.yml
       for-type: +EVKB_IMXRT1050_WizFi360
@@ -43,6 +49,7 @@ project:
       for-type:
         - +EVKB_IMXRT1050_ESP8266
         - +EVKB_IMXRT1050_WizFi360
+        - +STM32H745I-DISCO_ESP8266
 
     - layer: ../layer/Socket/VHT/Socket.clayer.yml
       for-type:
